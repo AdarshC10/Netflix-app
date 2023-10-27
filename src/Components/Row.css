@@ -1,0 +1,23 @@
+.row{
+    margin-left: 20px;
+    padding-top: 20px;
+}
+.movie-row{
+    display: flex;
+    /* remove scrollbar */
+    overflow-x: scroll;
+}
+.movie-image{
+    width: 100%;
+    padding-left: 15px;
+    height: 150px;
+    object-fit: contain;
+    transition: transform 450ms;
+
+}
+.movie-row::-webkit-scrollbar{
+    display: none ;
+}
+.movie-image:hover{
+    transform : scale(1.05);
+}
